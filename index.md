@@ -4,17 +4,15 @@ permalink: /
 
 title: "Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding"
 authors:
-    Mirac Suzgun, Adam Tauman Kalai
+    Mirac Suzgun (a), Adam Tauman Kalai (b)
 affiliations:
-    Stanford University, OpenAI
+    (a) Stanford University, (b) OpenAI
 paper: https://arxiv.org/abs/2401.12954
 code: [Coming soon]
 data: [Coming soon]
 ---
 
 ![Meta-Prompting-Results](/static/image/meta-prompting-results.png)
-
-**Enhancing GPT-4 with meta-prompting.** In this study, we introduce and examine the effectiveness of meta- prompting, contrasting it with a range of zero-shot prompting techniques, including standard zero-shot (Std), zero-shot chain-of-thought (0-CoT), generic and dynamic expert (Ex-St and Ex-Dy), and multipersona (MP). Our research demonstrates that meta-prompting, particularly when combined with a Python interpreter, significantly improves overall accuracy and robustness in GPT-4 across a variety of tasks.
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
@@ -25,6 +23,7 @@ data: [Coming soon]
     </div>
 </div>
 
+**Enhancing GPT-4 with meta-prompting.** In this study, we introduce and examine the effectiveness of meta- prompting, contrasting it with a range of zero-shot prompting techniques, including standard zero-shot (Std), zero-shot chain-of-thought (0-CoT), generic and dynamic expert (Ex-St and Ex-Dy), and multipersona (MP). Our research demonstrates that meta-prompting, particularly when combined with a Python interpreter, significantly improves overall accuracy and robustness in GPT-4 across a variety of tasks.
 
 ## Citation
 
