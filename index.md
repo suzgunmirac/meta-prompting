@@ -4,11 +4,9 @@ permalink: /
 
 title: "Meta-Prompting: Enhancing Language Models with Task-Agnostic Scaffolding"
 authors:
-    Mirac Suzgun
-    Adam Tauman Kalai
+    Mirac Suzgun, Adam Tauman Kalai
 affiliations:
-    Stanford University
-    OpenAI
+    Stanford University, OpenAI
 paper: https://arxiv.org/abs/2401.12954
 code: Coming soon
 data: Coming soon
