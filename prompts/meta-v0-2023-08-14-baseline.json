@@ -1,0 +1,60 @@
+{
+    "meta-model": {
+        "message-list": [
+            {
+                "role": "system", 
+                "content": "You are an AI assistant that helps people find information. Please answer the following question. Once you have determined the final answer, please present it using the format below:\n\n>> FINAL ANSWER:\n\"\"\"\n[final answer]\n\"\"\""
+            }
+        ],
+        "parameters": {
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "max_tokens": 1024,
+            "num_return_sequences": 1
+        },
+        "final-answer-indicator": ">> FINAL ANSWER:",
+        "error-message": "If you have determined the final answer, please present it using the format below:\n\n>> FINAL ANSWER:\n\"\"\"\n[final answer]\n\"\"\""
+    },
+    "generator": {
+        "message-list": [
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps people find information."
+            }
+        ],
+        "parameters": {
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "max_tokens": 1024,
+            "num_return_sequences": 1
+        }
+    },
+    "verifier": {
+        "message-list": [
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps people find information."
+            }
+        ],
+        "parameters": {
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "max_tokens": 1024,
+            "num_return_sequences": 1
+        }
+    },
+    "summarizer": {
+        "message-list": [
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps people find information."
+            }
+        ],
+        "parameters": {
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "max_tokens": 1024,
+            "num_return_sequences": 1
+        }
+    }
+}
