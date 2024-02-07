@@ -54,7 +54,7 @@ class MetaPromptingScaffolding:
         self.intermediate_feedback = intermediate_feedback
         self.use_zero_shot_cot_in_expert_messages = use_zero_shot_cot_in_expert_messages
 
-    @retry.retry(tries=1, delay=5)
+    @retry.retry(tries=7, delay=5)
     def meta_model_generate(
         self,
         prompt_or_messages: Union[str, List[Dict[str, str]]],
@@ -74,6 +74,7 @@ class MetaPromptingScaffolding:
             assert num_return_sequences == 1
 
             # This step is defined to ensure that the meta model returns a response in less than 16 rounds.
+            # Note: Please feel free to change the number of rounds as you see fit.
             if counter == 16:
                 return prompt_or_messages
 
