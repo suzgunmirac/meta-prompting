@@ -24,7 +24,7 @@ class MetaPromptingScaffolding:
         final_answer_indicator: str,
         expert_python_message: str,
         intermediate_feedback: str,
-        fresh_eyes: bool = True,
+        fresh_eyes: bool = False,
         include_expert_name_in_instruction: bool = False,
         extract_output: bool = False,
         use_zero_shot_cot_in_expert_messages: bool = False,
@@ -41,7 +41,7 @@ class MetaPromptingScaffolding:
         self.error_message = error_message
         self.final_answer_indicator = final_answer_indicator
 
-        # Set the zero-shot CoT flag
+        # Set the fresh_eyes flag
         self.fresh_eyes = fresh_eyes
 
         # Other helper variables and constants for the model

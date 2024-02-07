@@ -176,7 +176,7 @@ class OpenAI_LanguageModel(LanguageModel):
         # Set the stop tokens
         stop_tokens = stop_tokens or self.stop_tokens
 
-        print(f"Calling GPT-4 with prompt: {prompt_or_messages}")
+        print(f"Calling the language model with prompt: {prompt_or_messages}")
 
         if self.api_type == "azure":
             ## OLD AZURE API CODE
@@ -192,7 +192,6 @@ class OpenAI_LanguageModel(LanguageModel):
                     stop=stop_tokens,
                     **kwargs,
                 )
-                print(response)
                 # Return the list of messages
                 return [message["message"]["content"] for message in response.choices]
             else:
@@ -206,7 +205,6 @@ class OpenAI_LanguageModel(LanguageModel):
                     stop=stop_tokens,
                     **kwargs,
                 )
-                print(response)
                 # Return the list of outputs
                 return [output["text"] for output in response.choices]
         else:

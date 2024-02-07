@@ -91,7 +91,7 @@ class Arguments(Tap):
     output_directory: str = "RESULTS-TEST"
 
     # Additional parameters
-    fresh_eyes: bool = True # previously zero_shot_cot: bool = False
+    fresh_eyes: bool = False # previously zero_shot_cot: bool = False
     expert_prompting: bool = False
     verbose: bool = False
 
